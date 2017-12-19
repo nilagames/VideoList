@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nilagames.preschool.learning.songs"
+    package="com.nilagames.xmas.video.songs"
     android:versionCode="1"
     android:versionName="1.0">
 

@@ -7,24 +7,23 @@ import {
 import { default as FontAwesome } from 'react-native-vector-icons/FontAwesome';
 import { default as Ionicons } from 'react-native-vector-icons/Ionicons';
 
-import HomeScreen from './screens/Home';
 import FavoritesScreen from './screens/Favorites';
 import VideoScreen from './screens/Video';
-import { CategoryIcon, BackIcon } from './components/icons';
+import { CategoryIcon } from './components/icons';
 import { colors } from './utils/constants';
 
 const AppMainStack = StackNavigator({
   Home: {
-    screen: HomeScreen,
+    screen: FavoritesScreen,
     navigationOptions: ({ navigation }) => ({
-      drawerLabel: `Categories`,
+      drawerLabel: `Merry Chirstmas`,
       drawerIcon: ({ tintColor }) => (
-        <Ionicons name="md-locate" size={23} color={tintColor} />
+        <Ionicons name="md-jet" size={23} color={tintColor} />
       ),
       headerStyle: {
         backgroundColor: colors.headerStyle,
       },
-      headerTitle: `Categories`,
+      headerTitle: `Merry Chirstmas`,
       headerTitleStyle: {
         color: colors.WHITE,
       },
@@ -36,23 +35,6 @@ const AppMainStack = StackNavigator({
     navigationOptions: ({ navigation }) => ({
       header: null,
     })
-  },
-  CategoryVideos: {
-    screen: FavoritesScreen,
-    navigationOptions: ({ navigation }) => ({
-      drawerLabel: `${ navigation.state.params.item.name }`,
-      drawerIcon: ({ tintColor }) => (
-        <Ionicons name="md-videocam" size={23} color={tintColor} />
-      ),
-      headerStyle: {
-        backgroundColor: colors.headerStyle,
-      },
-      headerTitle: `${ navigation.state.params.item.name }`,
-      headerTitleStyle: {
-        color: colors.WHITE,
-      },
-      headerLeft: <BackIcon onPress={() => navigation.goBack()} />,
-    }),
   },
 }, {
   cardStyle: {

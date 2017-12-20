@@ -62,7 +62,7 @@ class App extends Component {
               <AdMobBanner
                 adSize="fullBanner"
                 adUnitID={config.admobBannerID}
-                testDevices={[AdMobBanner.simulatorId]}
+                testDevices={config.testIds}
                 onAdFailedToLoad={error => console.error(error)}
               /> : null
           }

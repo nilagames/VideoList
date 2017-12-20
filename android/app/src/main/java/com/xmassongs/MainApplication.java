@@ -1,4 +1,4 @@
-package com.nilagames.xmas.video.songs;
+package com.xmassongs;
 
 import android.app.Application;
 

@@ -138,8 +138,6 @@ android {
                 storePassword pass
                 keyAlias MYAPP_RELEASE_KEY_ALIAS
                 keyPassword pass
-                v1SigningEnabled true
-                v2SigningEnabled true
             }
         }
     }

@@ -3,13 +3,15 @@ import { Platform } from 'react-native';
 import {
   TabNavigator,
   StackNavigator,
+  DrawerNavigator,
 } from 'react-navigation';
 import { default as FontAwesome } from 'react-native-vector-icons/FontAwesome';
 import { default as Ionicons } from 'react-native-vector-icons/Ionicons';
 
 import FavoritesScreen from './screens/Favorites';
 import VideoScreen from './screens/Video';
-import { CategoryIcon } from './components/icons';
+import { CustomDrawerContent } from './components';
+import { HamburgerIcon } from './components/icons';
 import { colors } from './utils/constants';
 
 const AppMainStack = StackNavigator({
@@ -27,7 +29,7 @@ const AppMainStack = StackNavigator({
       headerTitleStyle: {
         color: colors.WHITE,
       },
-      headerLeft: <CategoryIcon onPress={() => {}} />,
+      headerLeft: <HamburgerIcon onPress={() => navigation.navigate('DrawerOpen')} />,
     })
   },
   Video: {
@@ -43,8 +45,22 @@ const AppMainStack = StackNavigator({
   mode: 'modal',
 });
 
+const AppDrawer = DrawerNavigator({
+  Home: { screen: AppMainStack },
+}, {
+  contentComponent: props =>
+    (<CustomDrawerContent
+      {...props}
+    />),
+  contentOptions: {
+    activeBackgroundColor: colors.drawerActiveBG,
+    activeTintColor: colors.WHITE,
+    inactiveTintColor: colors.drawerInactiveColor,
+  },
+});
+
 const Navigator = TabNavigator({
-  Main: { screen: AppMainStack },
+  Main: { screen: AppDrawer },
 }, {
   navigationOptions: {
     tabBarVisible: false,
@@ -52,4 +68,4 @@ const Navigator = TabNavigator({
   swipeEnabled: false,
 });
 
-export default Navigator;
+export default AppDrawer;

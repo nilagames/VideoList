@@ -116,8 +116,8 @@ android {
         applicationId "com.nilagames.xmas.video.songs"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 3
-        versionName "1.2"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
         ndk {
             abiFilters "armeabi-v7a", "x86"

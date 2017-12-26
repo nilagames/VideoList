@@ -113,7 +113,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.nilagames.xmas.video.songs"
+        applicationId "com.nilagames.christmas.video.songs"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

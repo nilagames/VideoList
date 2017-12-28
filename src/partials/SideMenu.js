@@ -6,7 +6,7 @@ import { DrawerItem } from '../components';
 import { openLink, shareOptions } from '../utils';
 
 const appDetails = {
-  url: 'https://play.google.com/store/apps/details?id=com.nilagames.christmas.video.songs',
+  url: 'https://play.google.com/store/apps/details?id=com.nilagames.pongal.kolam.videos',
   developerUrl: 'https://play.google.com/store/apps/developer?id=Nila+Games',
   appName: 'Pongal Kolam videos - Sankranthi Muggulu design Videos',
   privacy: 'https://nilagames.github.io/policy/privacy.html',

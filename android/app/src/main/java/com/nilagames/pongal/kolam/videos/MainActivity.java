@@ -1,4 +1,4 @@
-package com.nilagames.xmas.video.songs;
+package com.nilagames.pongal.kolam.videos;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "Christmassongs";
+        return "PongalKolam";
     }
 }

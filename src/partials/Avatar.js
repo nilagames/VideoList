@@ -4,8 +4,8 @@ import { CachedImage } from "react-native-img-cache";
 
 class Avatar extends PureComponent {
   render() {
-    let image = 'https://img.youtube.com/vi/j2SrSeOd68k/mqdefault.jpg';
-    
+    let image = 'https://img.youtube.com/vi/i_HthOzKsis/mqdefault.jpg';
+
     return (
       <CachedImage source={{ uri : image }} resizeMode="stretch"
         style={styles.thumbnail}

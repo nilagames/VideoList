@@ -18,14 +18,14 @@ const AppMainStack = StackNavigator({
   Home: {
     screen: FavoritesScreen,
     navigationOptions: ({ navigation }) => ({
-      drawerLabel: `Merry Chirstmas`,
+      drawerLabel: `Learn Yoga`,
       drawerIcon: ({ tintColor }) => (
         <Ionicons name="md-jet" size={23} color={tintColor} />
       ),
       headerStyle: {
         backgroundColor: colors.headerStyle,
       },
-      headerTitle: `Merry Chirstmas`,
+      headerTitle: `Learn Yoga`,
       headerTitleStyle: {
         color: colors.WHITE,
       },

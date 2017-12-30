@@ -1,4 +1,4 @@
-package com.nilagames.xmas.video.songs;
+package com.nilagames.yoga.learn;
 
 import android.app.Application;
 

@@ -1,12 +1,12 @@
 const color = {
   WHITE: '#FFFFFF',
   TEXT_COLOR: '#444444',
-  APP_UKS: '#EF9A9A',
-  APP_KAKS: '#F44336',
-  APP_KOLM: '#E53935',
-  APP_NELI: '#F8BBD0',
-  APP_VIIS: '#B71C1C',
-  APP_KUUS: '#EF5350',
+  APP_UKS: '#f48fb1',
+  APP_KAKS: '#e91e63',
+  APP_KOLM: '#d81b60',
+  APP_NELI: '#f48fb1',
+  APP_VIIS: '#880e4f',
+  APP_KUUS: '#c51162',
 };
 
 export const colors = {
@@ -25,4 +25,4 @@ export const colors = {
   avatar: color.APP_KAKS,
 };
 
-export const RANDOM_COLORS = ['#009EEB', '#592DEA', '#FF16D1', '#FF5216', '#0F9F4F', '#F8B700', '#1F2D3D', '#8492A6'];
+export const RANDOM_COLORS = ['#009EEB', '#592DEA', '#0F9F4F', '#F8B700', '#1F2D3D', '#8492A6'];

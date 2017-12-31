@@ -57,15 +57,6 @@ class App extends Component {
           <Navigator
             onNavigationStateChange={this.onNavigationStateChange}
           />
-          {
-            this.state.showAds ?
-              <AdMobBanner
-                adSize="fullBanner"
-                adUnitID={config.admobBannerID}
-                testDevices={config.testIds}
-                onAdFailedToLoad={error => console.error(error)}
-              /> : null
-          }
         </Root>
       </ThemeProvider>
     );

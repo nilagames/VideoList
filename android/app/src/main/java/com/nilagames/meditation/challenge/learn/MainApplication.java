@@ -1,4 +1,4 @@
-package com.nilagames.xmas.video.songs;
+package com.nilagames.meditation.challenge.learn;
 
 import android.app.Application;
 

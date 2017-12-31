@@ -6,9 +6,9 @@ import { DrawerItem } from '../components';
 import { openLink, shareOptions } from '../utils';
 
 const appDetails = {
-  url: 'https://play.google.com/store/apps/details?id=com.nilagames.christmas.video.songs',
+  url: 'https://play.google.com/store/apps/details?id=com.nilagames.meditation.challenge.learn',
   developerUrl: 'https://play.google.com/store/apps/developer?id=Nila+Games',
-  appName: 'Christmas video Songs for kids, adults & everyone',
+  appName: 'Meditation for Beginners Guide - 30 days Challenge',
   privacy: 'https://nilagames.github.io/policy/privacy.html',
   contact: 'mailto:gamesnila@gmail.com',
 };
